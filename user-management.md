@@ -12,7 +12,7 @@
 
 exemplo de conteúdo:
 
-
+![](https://github.com/lucaschf/administration-and-management-of-computer-networks/blob/main/images/user-management/passwd-content-example.png)
 
 ````bash
 /etc/group
