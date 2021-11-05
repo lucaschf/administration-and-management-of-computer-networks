@@ -79,7 +79,7 @@ Algumas opções do comando:
 Altera as informações dos usuários
 
 ````bash
-chfn [opcoes] [usuário]
+chfn [opcoes] usuário
 ````
 
 Algumas opções
@@ -95,6 +95,20 @@ Algumas opções
 **Exemplo**
 
 ![](https://github.com/lucaschf/administration-and-management-of-computer-networks/blob/main/images/user-management/chfn-example.png)
+
+## userdel
+
+Exclui uma conta de usuario
+
+````bash
+userdel [-r] usuário
+````
+
+-r	#exclui também o diretório do usuário (não é excluído por padrão)
+
+**Exemplo**
+
+![](https://github.com/lucaschf/administration-and-management-of-computer-networks/blob/main/images/user-management/userdel-example.png)
 
 # Gerenciamento de senhas
 

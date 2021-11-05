@@ -4,7 +4,7 @@
 
 ## Passwd
 
-### Lista de usuarios do sistema
+### Lista de usuários do sistema
 
 ````bash
 /etc/passwd 
@@ -76,7 +76,7 @@ A informação é separada pelo caracter ':' sendo, da esquerda para direita:
 **PS. Pode -se adicionar o usuário a um grupo com o seguinte comando:**
 
 ````bash
-usermod -a -G [GRUPO] [USUARIO]
+usermod -a -G grupo usuario
 ````
 
 ## Gshadow
@@ -105,7 +105,7 @@ A informação é separada pelo caracter ':' sendo, da esquerda para direita:
 **groups** - lista os grupos dos quais um usuário é membro
 
 ````bash
-groups [USERNAME]
+groups usuario
 ````
 
 **Exemplo:**
@@ -115,7 +115,7 @@ groups [USERNAME]
 **id** - exibe os Ids de grupos e usuário e os grupos aos quais ele pertence
 
 ````bash
-id [OPCAO] [USERNAME]
+id opcao usuario
 ````
 
 opções para o comando id:
