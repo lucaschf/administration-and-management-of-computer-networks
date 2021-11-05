@@ -1,5 +1,7 @@
 # Gerenciamento de usuários - Comandos
 
+***Os comandos abaixo devem ser executados como root***
+
 ## useradd
 
 cria uma conta de usuário no sistema
@@ -10,17 +12,17 @@ useradd [OPCOES] conta
 
 algumas opções do comando:
 
--c  #comentário - define o campo comentário (nome usuário, telefone etc)
+-c 	#comentário - define o campo comentário (nome usuário, telefone etc)
 
--d #dir_home - define o diretório home do usuário  
+-d	#dir_home - define o diretório home do usuário  
 
--m #cria e preenche o diretório home
+-m	#cria e preenche o diretório home
 
--s #shell  usa o shell como padrão da conta
+-s	#shell  usa o shell como padrão da conta
 
--e #data_expiração da conta
+-e	#data_expiração da conta
 
--u #UID desejada para o usuário
+-u	#UID desejada para o usuário
 
 **Exemplo**
 
@@ -33,15 +35,48 @@ Script em Perl que utiliza o programa useradd para realizar tarefas de criação
 adicionar usuário:
 
 `````bash
-adduser usuario
+adduser username
 `````
 
 adicionar um usuário a um grupo existente:
 
 ````bash
-adduser usuario grupo
+adduser username grupo
 ````
 
 **Exemplo**
 
 ![](https://github.com/lucaschf/administration-and-management-of-computer-networks/blob/main/images/user-management/adduser-example.png)
+
+# Gerenciamento de senhas
+
+## passwd
+
+configura a senha de usuário, além de algumas opções de conta
+
+````bash
+passwd [opcoes] username
+````
+
+algumas opções do comando:
+
+-l 	#trava a senha da conta especificada
+
+-u	#destrava a senha da conta especificada
+
+-d	#Exclui a senha 
+
+-e	#força a expiração da senha
+
+-x dias	#força a expiração da senha após a passagem dos dias especificada
+
+-n dias	#quantidade de dias mínima que o usuário precisa aguardar para poder trocar sua senha
+
+-w dias	#define a quantidade de dias a partir do qual o usuário começa a receber aviso de expiração de senha
+
+-S	#exibe o status da conta
+
+**Exemplos**
+
+![](https://github.com/lucaschf/administration-and-management-of-computer-networks/blob/main/images/user-management/passwd-example.png)
+
