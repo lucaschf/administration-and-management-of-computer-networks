@@ -80,3 +80,41 @@ algumas opções do comando:
 
 ![](https://github.com/lucaschf/administration-and-management-of-computer-networks/blob/main/images/user-management/passwd-example.png)
 
+## gpasswd
+
+usado para administar grupos no linux. Grava informações nos arquivos /etc/group e /etc/gshadow
+
+`````bash
+gpasswd [opcoes] grupo
+`````
+
+**algumas opções do comando**
+
+criar ou alterar senha do grupo:
+
+````
+gpasswd grupo
+````
+
+adicionar usuário ao grupo:
+
+````bash
+gpasswd -a usuario grupo
+````
+
+remover usuário do grupo:
+
+`````bash
+gpasswd -d usuario grupo
+`````
+
+tornar usuário administrador do grupo
+
+````bash
+gpasswd -A usuario grupo
+````
+
+**Exemplos**
+
+![](https://github.com/lucaschf/administration-and-management-of-computer-networks/blob/main/images/user-management/gpasswd-example.png)
+
