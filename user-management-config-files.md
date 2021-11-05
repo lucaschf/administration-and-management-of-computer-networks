@@ -1,8 +1,8 @@
-# Gerenciamento de usuarios
+# Gerenciamento de usuários - Arquivos de configuração
 
 
 
-## principais arquivos de configuração
+## Passwd
 
 ### Lista de usuarios do sistema
 
@@ -26,13 +26,35 @@ A informação é separada pelo caracter ':' sendo, da esquerda para direita:
 6. Diretório home padrão;
 7. Shell padrão.
 
-**Possui as senhas criptografadas dos usuários**
+## Shadow
+
+Possui as senhas criptografadas dos usuários e outras informações sobre as contas
 
 `````bash
 /etc/shadow
 `````
 
-**Define os grupos aos quais os usuários pertencem**
+**Exemplo de conteúdo:**
+
+![](https://github.com/lucaschf/administration-and-management-of-computer-networks/blob/main/images/user-management/shadow-content-example.png)
+
+**Descrição**
+
+A informação é separada pelo caracter ':' sendo, da esquerda para direita:
+
+1. Nome da conta;
+2. Senha (! = não possui senha; * = conta desativada; ![senha] = conta travada; !! = senha nunca configurada);
+3. Última módificação - dias desde 01/01/1970 desde que a senha foi modificada pela última vez;
+4. Mínimo - dias antes que o usuário possa modificar sua senha;
+5. Máximo - dias que o usário pode manter sua senha;
+6. Aviso - dias antes da expiração da senha quando o usuário começa a receber avisos;
+7. Inativo - dias após a validade da senha em que a conta é desabilitada automaticamente;
+8. Expiração - quando a conta será desativada;
+9. Reservado;
+
+## Group
+
+Define os grupos aos quais os usuários pertencem
 
 ````bash
 /etc/group
@@ -57,7 +79,9 @@ A informação é separada pelo caracter ':' sendo, da esquerda para direita:
 usermod -a -G [GRUPO] [USUARIO]
 ````
 
- **Possui as senhas criptografadas dos grupos**
+## Gshadow
+
+Possui as senhas criptografadas dos grupos
 
 ````bash
 /etc/gshadow
@@ -102,6 +126,7 @@ opções para o comando id:
 
 -n exibe os nomes dos grupos ao invés dos GIDs
 
-**Exemplo:**
+**Exemplos:**
 
 ![](https://github.com/lucaschf/administration-and-management-of-computer-networks/blob/main/images/user-management/id-example.png)
+
