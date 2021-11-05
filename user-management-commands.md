@@ -48,6 +48,54 @@ adduser username grupo
 
 ![](https://github.com/lucaschf/administration-and-management-of-computer-networks/blob/main/images/user-management/adduser-example.png)
 
+## usermod
+
+modifica uma conta de usuário existente
+
+````bash
+usermod [opcoes] usuario
+````
+
+Algumas opções do comando:
+
+-u UID	#altera o UID para o valor especificado
+
+-s shell	#define um novo shell para o usuário
+
+-g grupo	#define um novo grupo primário para o usuário
+
+-G grupo1, grupo2, ....	#torna o usuário membro dos grupos especificados
+
+-c comentário	# define ou altera o valor do campo comentários
+
+-l login	#altera o nome da conta do usuário para o login especificado
+
+**Exemplos**
+
+![](https://github.com/lucaschf/administration-and-management-of-computer-networks/blob/main/images/user-management/usermod-example.png)
+
+## chfn
+
+Altera as informações dos usuários
+
+````bash
+chfn [opcoes] [usuário]
+````
+
+Algumas opções
+
+-f nome_completo
+
+-r número da sala
+
+-w telefone comercial
+
+-h telefone residencial
+
+**Exemplo**
+
+![](https://github.com/lucaschf/administration-and-management-of-computer-networks/blob/main/images/user-management/usermod-example.png)
+
 # Gerenciamento de senhas
 
 ## passwd
@@ -117,4 +165,3 @@ gpasswd -A usuario grupo
 **Exemplos**
 
 ![](https://github.com/lucaschf/administration-and-management-of-computer-networks/blob/main/images/user-management/gpasswd-example.png)
-
