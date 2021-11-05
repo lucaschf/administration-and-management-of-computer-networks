@@ -94,7 +94,7 @@ Algumas opções
 
 **Exemplo**
 
-![](https://github.com/lucaschf/administration-and-management-of-computer-networks/blob/main/images/user-management/usermod-example.png)
+![](https://github.com/lucaschf/administration-and-management-of-computer-networks/blob/main/images/user-management/chfn-example.png)
 
 # Gerenciamento de senhas
 
