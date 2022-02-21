@@ -1,0 +1,2 @@
+*/1 * * * * /home/lucasc/rrd/ifupdate.sh
+*/3 * * * * /home/lucasc/rrd/ifgraph.sh
